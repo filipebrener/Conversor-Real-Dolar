@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <script src="script.js"></script>
+        <title>Conversor Real Dólar</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="page-title">
+                Conversor de moedas
+            </h1>
+            <p class="page-subtitle">
+                Descubra os valores em dólar U$ ou em real R$
+            </p>
+            
+            <div>
+                <div>
+                    <br><br><br><br><br><p>USD em BRL</p>
+                    <label for "dolar"><strong>Dólar:</strong></label>
+                    <input type="number" placeholder="Digite o valor em U$" name="dolar" id="dolar" onfocus="real.value=''">
+                    <button onclick="converteDolar(document.getElementById('dolar').value);">Converter</button>
+                </div>
+                <div>
+                    <p>BRL em USD</p>
+                    <label for "real"><strong>Real:</strong></label>
+                    <input type="number" placeholder="Digite o valor em R$" name="real" id="real" onfocus="dolar.value=''">
+                    <button onclick="converteReal(document.getElementById('real').value);">Converter</button>
+                </div>
+            </div>
+            <h2 id = "h2"></h2>
+            <h2 class = "cot" id = "cot"><h2/>
+        </div>
+        
+    </body>
+
+</html>
